@@ -1,0 +1,28 @@
+{
+  "name": "skinmbti-nodejs",
+  "version": "1.0.0",
+  "description": "- Skin Mbti 프로젝트에서 사용할 Node Js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeungYooon/skinmbti-nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeungYooon/skinmbti-nodejs/issues"
+  },
+  "homepage": "https://github.com/SeungYooon/skinmbti-nodejs#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.13"
+  }
+}
