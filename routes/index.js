@@ -14,7 +14,7 @@ router.get('/skins', (req, res) => {
 
 // GET Skin by skin_title
 router.get('/skins/skin_title/:skin_title', (req, res) => {
-    Skin.find({ skin_title: req.params.skin_title }, { _id: 1, skin_kinds: 1, image_url: 1, description: 1 }, (err, skins) => {
+    Skin.find({ skin_title: req.params.skin_title }, { _id: 1, skin_kinds: 1, image_url: 1, description: 1, point: 1}, (err, skins) => {
         if (err) return res.status(500).json({ error: err });
         if (skins.length === 0) return res.status(404).json({ error: 'skin_title not found' });
         res.json(skins);
