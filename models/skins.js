@@ -4,7 +4,8 @@ const skinSchema = new mongoose.Schema({
     skin_title: String,
     skin_kinds: String,
     image_url: String,
-    description: String
+    description: String,
+    point : String
 }, {
     versionKey: false
 });
